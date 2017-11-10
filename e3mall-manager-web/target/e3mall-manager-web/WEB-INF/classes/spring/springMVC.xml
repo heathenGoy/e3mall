@@ -52,5 +52,8 @@ http://www.springframework.org/schema/util/spring-util-4.0.xsd">
 		
 	<dubbo:reference interface="cn.e3mall.manager.interfaces.ItemCatService"
 		id="itemCatService" timeout="1000000" retries="2"/>
+		
+		<dubbo:reference interface="cn.e3mall.content.interfaces.ContentCatService"
+		id="contentCatService" timeout="1000000" retries="2"/>
 	
 </beans>

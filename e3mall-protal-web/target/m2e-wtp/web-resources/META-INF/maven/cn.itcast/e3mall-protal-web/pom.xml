@@ -113,5 +113,10 @@
 			<artifactId>zkclient</artifactId>
 			<version>${zkclient.version}</version>
 		</dependency>
-		</dependencies>
+		<dependency>
+			<groupId>cn.itcast</groupId>
+			<artifactId>e3mall-content-interface</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
 </project>

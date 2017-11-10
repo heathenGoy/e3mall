@@ -40,7 +40,7 @@ http://www.springframework.org/schema/util/spring-util-4.0.xsd">
 	<!-- 切面 -->
 	<aop:config>
 		<aop:advisor advice-ref="txAdvice"
-			pointcut="execution(* cn.e3mall.service.*.*(..))" />
+			pointcut="execution(* cn.e3mall.manager.service..*(..))" />
 	</aop:config>
 
 	<bean id="transactionManager"
