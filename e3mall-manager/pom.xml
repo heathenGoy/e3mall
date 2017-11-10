@@ -12,10 +12,10 @@
 
   
   <modules>
-  	<module>e3mall-manager-web</module>
   	<module>e3mall-manager-pojo</module>
   	<module>e3mall-manager-dao</module>
   	<module>e3mall-manager-service</module>
+  	<module>e3mall-manager-interface</module>
   </modules>
   <dependencies>
   	<dependency>
