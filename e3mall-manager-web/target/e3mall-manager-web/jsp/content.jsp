@@ -52,7 +52,7 @@ var contentListToolbar = [{
     		return ;
     	}
     	E3MALL.createWindow({
-			url : "/content-add"
+			url : "/index/content-add"
 		}); 
     }
 },{
@@ -69,7 +69,7 @@ var contentListToolbar = [{
     		return ;
     	}
 		E3MALL.createWindow({
-			url : "/content-edit",
+			url : "/index/content-edit",
 			onLoad : function(){
 				var data = $("#contentList").datagrid("getSelections")[0];
 				$("#contentEditForm").form("load",data);

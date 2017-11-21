@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.e3mall.search.mapper.SearchItemMapper">
+
+
+	<select id="loadItemIndex" resultType="cn.e3mall.search.pojo.SearchItemObject">
+		SELECT
+			item.`id`,
+			item.`title`,
+			item.`image`,
+			item.`sell_point`,
+			item.`price`,
+			des.`item_desc`,
+			cat.`name` category_name
+		FROM
+			tb_item item,
+			tb_item_cat cat,
+			tb_item_desc des
+		WHERE
+			item.`id` = des.`item_id` AND
+			item.`cid` = cat.`id`AND
+			item.`status` = 1;
+	</select>
+	<select id = "selectItemById" resultType="cn.e3mall.search.pojo.SearchItemObject"
+		parameterType="long">
+		SELECT
+			item.`id`,
+			item.`title`,
+			item.`image`,
+			item.`sell_point`,
+			item.`price`,
+			des.`item_desc`,
+			cat.`name` category_name
+		FROM
+			tb_item item,
+			tb_item_cat cat,
+			tb_item_desc des
+		WHERE
+			item.`id` = des.`item_id` AND
+			item.`cid` = cat.`id`AND
+			item.`status` = 1 AND
+			item.`id` = #{value};
+	</select>
+	
+	
+</mapper>

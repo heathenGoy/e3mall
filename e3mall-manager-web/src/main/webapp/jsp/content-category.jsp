@@ -70,7 +70,9 @@ function menuHandler(item){
 	}else if(item.name === "delete"){
 		$.messager.confirm('确认','确定删除名为 '+node.text+' 的分类吗？',function(r){
 			if(r){
-				$.post("/content/category/delete/",{parentId:node.parentId,id:node.id},function(){
+				//var nodes = $('#tt').tree('getChecked', 'indeterminate');
+				var parent_Node = tree.tree("getParent",node.target);
+				$.post("/content/category/delete/",{parentId:parent_Node.id,id:node.id},function(){
 					tree.tree("remove",node.target);
 				});	
 			}

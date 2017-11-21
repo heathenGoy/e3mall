@@ -13,9 +13,6 @@
         <dependent-module archiveName="e3mall-common-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/e3mall-common/e3mall-common">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="e3mall-content-interface-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/e3mall-content-interface/e3mall-content-interface">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
         <dependent-module archiveName="e3mall-manager-pojo-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/e3mall-manager-pojo/e3mall-manager-pojo">
             <dependency-type>uses</dependency-type>
         </dependent-module>
