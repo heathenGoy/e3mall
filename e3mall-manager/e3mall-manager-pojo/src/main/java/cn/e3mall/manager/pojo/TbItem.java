@@ -25,8 +25,26 @@ public class TbItem implements Serializable{
     private Date created;
 
     private Date updated;
+    
+    private String[] images;
+    
+    
 
-    public Long getId() {
+    public String[] getImages() {
+    	String[] imagesStr  = null;
+    	if(image != null && ! "".equals(image)) {
+    		
+    		imagesStr = this.image.split(",");
+    	}
+    	
+		return imagesStr;
+	}
+
+	public void setImages(String[] images) {
+		this.images = images;
+	}
+
+	public Long getId() {
         return id;
     }
 

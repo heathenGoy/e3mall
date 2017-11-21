@@ -9,7 +9,9 @@ import cn.e3mall.common.easyui.EasyUITreeNode;
 
 public interface ItemCatService {
 	
-	List<EasyUITreeNode> findItemCatByParentId(Long parentId);
+	List<EasyUITreeNode> findItemCatByParentId(Long catId);
+	
+	
 	
 	
 }
