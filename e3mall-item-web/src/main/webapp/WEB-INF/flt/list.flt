@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<#list personList as person>
+姓名:${person.name}
+年龄:${person.age}
+地址:${person.address}
+<br/>
+</#list>
+</body>
+</html>

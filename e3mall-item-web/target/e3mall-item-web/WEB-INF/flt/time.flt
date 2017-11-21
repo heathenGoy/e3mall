@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<#include "/insert.flt"/>
+${today?date}
+${today?datetime}
+${today?time}
+${today?string('yyyy-MM-dd hh:mm:ss')}
+</body>
+
+</html>
