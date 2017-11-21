@@ -1,6 +1,0 @@
-0:0:0:0:0:0:0:1 - - [07/Nov/2017:17:50:51 +0800] "GET /e3mall-manager-web HTTP/1.1" 302 - http-bio-8080-exec-1 0
-0:0:0:0:0:0:0:1 - - [07/Nov/2017:17:50:52 +0800] "GET /e3mall-manager-web/ HTTP/1.1" 404 989 http-bio-8080-exec-2 741
-0:0:0:0:0:0:0:1 - - [07/Nov/2017:17:50:52 +0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-3 0
-0:0:0:0:0:0:0:1 - - [07/Nov/2017:17:51:35 +0800] "GET /e3mall-manager-web/item/findById/536563 HTTP/1.1" 400 968 http-bio-8080-exec-4 13
-0:0:0:0:0:0:0:1 - - [07/Nov/2017:17:54:48 +0800] "GET /e3mall-manager-web/item/findById/536563 HTTP/1.1" 200 338 http-bio-8080-exec-1 1302
-0:0:0:0:0:0:0:1 - - [07/Nov/2017:18:06:39 +0800] "GET //item/findById/536563 HTTP/1.1" 200 338 http-bio-8080-exec-1 1149
